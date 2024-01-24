@@ -1,0 +1,16 @@
+2 things about electron:
+
+    1. The "Main Process":
+        - like a backend
+        - where the actual resizing of the image happens
+        - where we deal with the database
+
+    2. The "Renderer Process":
+        - like a frontend
+        - basically the UI'
+
+Bridging the "2 things about electron":
+
+    electron has two main processes ("main" and "renderer")
+     -> we can bridge these 2 processes using a "preload script".
+    source documentation: https://www.electronjs.org/docs/latest/tutorial/tutorial-preload
